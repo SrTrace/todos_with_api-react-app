@@ -34,27 +34,27 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
 
-   \`\`\`bash
+   ```bash
    git clone https://github.com/srtrace/react_todo-app-with-api.git
-   \`\`\`
+   ```
 
 2. **Navigate to the project directory:**
 
-   \`\`\`bash
+   ```bash
    cd react_todo-app-with-api
-   \`\`\`
+   ```
 
 3. **Install dependencies:**
 
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 4. **Start the development server:**
 
-   \`\`\`bash
+   ```bash
    npm start
-   \`\`\`
+   ```
 
    This will start the app and open it in your default web browser. If not, you can access it at `http://localhost:3000`.
 
