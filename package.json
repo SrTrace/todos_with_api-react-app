@@ -1,39 +1,48 @@
 {
-  "homepage": ".",
   "name": "react_todo-app-with-api",
-  "author": "SrTrace",
-  "keywords": [
-    "react",
-    "typescript",
-    "crud app"
-  ],
+  "homepage": ".",
   "version": "0.1.0",
+  "keywords": [],
+  "author": "SrTrace",
+  "license": "GPL-3.0",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "@types/react-transition-group": "^4.4.5",
     "bulma": "^0.9.4",
-    "classnames": "^2.3.2",
+    "classnames": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.6.3",
-    "typescript-eslint-parser": "^22.0.0",
-    "web-vitals": "^1.1.1"
+    "react-transition-group": "^4.4.5"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@mate-academy/scripts": "^1.8.1",
+    "@mate-academy/stylelint-config": "*",
+    "postcss": "^8.4.12",
+    "stylelint": "^15.11.0",
+    "typescript": "5.1.6",
+    "@mate-academy/eslint-config-react-typescript": "latest",
+    "@mate-academy/students-ts-config": "latest",
+    "@types/node": "^16.18.80",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "eslint": "^7.32.0",
+    "gh-pages": "^6.1.1",
+    "sass": "^1.72.0",
+    "prettier": "^3.2.5"
   },
   "scripts": {
+    "start": "mate-scripts start -l",
+    "build": "mate-scripts build",
+    "style-format": "npx stylelint 'src/**/*.scss' --fix --allow-empty-input",
+    "lint-js": "mate-scripts lint -j",
+    "lint-css": "mate-scripts lint -s",
     "format": "prettier --write './src/**/*.{ts,tsx}'",
-    "lint": "npm run format && eslint ./src --fix",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "lint": "npm run style-format && npm run format && npm run lint-js && npm run lint-css",
+    "update": "mate-scripts update",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "deploy": "mate-scripts deploy"
   },
   "browserslist": {
     "production": [
@@ -47,15 +56,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@mate-academy/eslint-config-react-typescript": "latest",
-    "@mate-academy/students-ts-config": "latest",
-    "@types/node": "^16.18.80",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19",
-    "eslint": "^7.32.0",
-    "gh-pages": "^6.1.1",
-    "sass": "^1.72.0",
-    "prettier": "^3.2.5"
+  "mateAcademy": {
+    "projectType": "reactTypescript"
   }
 }

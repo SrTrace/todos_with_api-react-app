@@ -18,6 +18,10 @@ export const TodoList: React.FC<TodoListProps> = ({
   onDeleteTodo,
   onErrorMessage,
 }) => {
+  if (!todos || todos.length === 0) {
+    return null; // return null explicitly instead of undefined
+  }
+
   let filteredTodos: Todo[] = [];
 
   switch (status) {
