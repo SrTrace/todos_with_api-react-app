@@ -60,4 +60,4 @@ To run this project locally, follow these steps:
 
 ## Demo
 
-Check out the live demo [here](https://srtrace.github.io/react_todo-app-with-api/).
+Check out the live demo [here](https://srtrace.github.io/todos_with_api-react-app/).
